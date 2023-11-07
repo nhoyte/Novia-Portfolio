@@ -1,0 +1,9 @@
+body {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-family: "Itim", cursive;
+  text-align: center;
+}
+.flagImage img {
+  width: 30px;
+  height: 20px;
+}
