@@ -4,27 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Novia Hoyte - Web Developer Portfolio" />
-    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Itim&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <title>Novia's Portfolio</title>
   </head>
   <body>
-    <h3>👋🏾 Hi, my name is</h3>
-    <h1>Novia Hoyte.</h1>
-    <h2>
-      Web Developer based in North Carolina, USA
-      <span class="flagImage"
-        ><img src="images/flag.png" alt="USA Flag"
-      /></span>
-    </h2>
-    <p>
-      I love writing code and making ideas come to life! Click below to learn
-      more about me, contact me, or check out some of my work 👇🏾
-    </p>
+    <div class="container containerInner">
+      <!--Navigation Menu-->
+      <nav class="navbar navbar-expand-md bg-light bg-body-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Novia Hoyte</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-0 mb-lg-0">
+              <li class="nav-item p-2">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/"
+                  title="Homepage"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="about.html" title="About us"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="about.html#contact" title="Contact us"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--End Navigation Menu-->
+
+      <h3>👋🏾 Hi, my name is</h3>
+      <h1>Novia Hoyte.</h1>
+      <h2>
+        Web Developer based in North Carolina, USA
+        <span class="flagImage"
+          ><img src="images/flag.png" alt="USA Flag"
+        /></span>
+      </h2>
+      <div class="container home-paragraph">
+        <p>
+          I love writing code and making ideas come to life! Click below to
+          learn more about me, contact me, or check out some of my work 👇🏾
+        </p>
+      </div>
+
+      <div class="d-flex justify-content-center mb-5">
+        <div>
+          <a href="about.html" class="homepage-button">About Me</a>
+        </div>
+        <div>
+          <a href="projects.html" class="homepage-button"> Projects </a>
+        </div>
+        <div>
+          <a href="about.html#contact" class="homepage-button">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <footer>Coded by Novia Hoyte</footer>
   </body>
 </html>
