@@ -9,24 +9,18 @@ body {
   font-family: "Itim", cursive;
   text-align: center;
   background-image: url("/images/color-splash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: fit; */
 }
-footer {
-  text-align: center;
-  color: rgb(10, 10, 10);
-  /* text-shadow: rgb(199, 245, 34) 1px 3px; */
-  text-shadow: rgb(255, 255, 255) 2px 3px;
-  padding: 15px;
-}
+
 h3 {
   font-size: 25px;
   color: var(--primary-color);
-  margin-top: 15px;
+  margin-top: 35px;
 }
 h1 {
   font-size: 50px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 h2 {
   color: var(--secondary-color);
@@ -48,13 +42,7 @@ p.brand {
 }
 
 .navbar {
-  width: 945px;
-  position: relative;
-  top: -20px;
-  left: -20px;
-  padding: 0px;
-  max-height: 55px;
-  margin-bottom: 30px;
+  width: 100%;
   border-bottom: 1.5px black solid;
 }
 .flagImage img {
@@ -62,15 +50,12 @@ p.brand {
   height: 20px;
 }
 
-div.containerInner {
-  max-width: 950px;
+.hero {
+  max-width: 65%;
   padding: 20px;
-  margin-top: 150px;
-  text-align: center;
+  margin-top: 100px;
   border: solid 2px black;
-  background-image: url("/images/Frame.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: rgb(255, 236, 186);
 }
 div.containerInnerAbout {
   max-width: 950px;
@@ -84,9 +69,9 @@ div.containerInnerAbout {
 div.home-paragraph {
   max-width: 400px;
   margin-top: 25px;
-  margin-bottom: 65px;
+  margin-bottom: 25px;
 }
-div .homepage-button {
+div .hero-buttons {
   padding: 12px;
   margin: 35px;
   border: 2px solid var(--primary-color);
@@ -96,6 +81,15 @@ div .homepage-button {
   box-shadow: var(--button-shadow);
   text-decoration: none;
 }
+.hero-button-group {
+  padding: 25px;
+  margin-bottom: 10px;
+}
+img.full-snack {
+  width: 170px;
+  height: 200px;
+  margin-bottom: 20px;
+}
 div.aboutParagraph {
   max-width: 800px;
   margin-top: 30px;
@@ -104,6 +98,13 @@ div.aboutParagraph {
   padding-right: 60px;
 }
 
+footer {
+  text-align: center;
+  color: rgb(10, 10, 10);
+  /* text-shadow: rgb(199, 245, 34) 1px 3px; */
+  text-shadow: rgb(255, 255, 255) 2px 3px;
+  padding: 15px;
+}
 .homepage-button:hover {
   background: #d2d2d2;
   color: rgb(208, 69, 152);
@@ -120,4 +121,7 @@ a.navbarLinks {
 }
 a.active {
   color: var(--primary-color) !important;
+}
+
+@media (max-width: 900px) {
 }
