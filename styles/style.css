@@ -3,14 +3,23 @@
   --secondary-color: rgb(134, 143, 149);
   --button-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
+.container.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.child-container {
+  padding: 20px;
+  /* max-height: 80%; */
+  /* max-width: 100%; */
+}
 body {
   font-family: "Aref Ruqaa Ink", serif;
   font-family: "Itim", cursive;
   text-align: center;
   background-image: url("/images/color-splash.jpg");
-  /* background-repeat: no-repeat; */
-  /* background-size: fit; */
 }
 
 h3 {
@@ -50,13 +59,18 @@ p.brand {
   height: 20px;
 }
 
+/**** index.html section ****/
 .hero {
-  max-width: 65%;
+  /* max-width: 65%;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 100px; */
   border: solid 2px black;
   background-color: rgb(255, 236, 186);
 }
+
+/**** projects.html section ****/
+
+/**** about.html section ****/
 div.containerInnerAbout {
   max-width: 950px;
   padding: 20px;
@@ -66,8 +80,11 @@ div.containerInnerAbout {
   background-color: #ffecba;
   padding: 20px;
 }
+
+/**** contact.html section ****/
+
 div.home-paragraph {
-  max-width: 400px;
+  max-width: 45%;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -88,7 +105,7 @@ div .hero-buttons {
 img.full-snack {
   width: 170px;
   height: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 div.aboutParagraph {
   max-width: 800px;
@@ -99,7 +116,7 @@ div.aboutParagraph {
 }
 
 footer {
-  text-align: center;
+  /* text-align: center; */
   color: rgb(10, 10, 10);
   /* text-shadow: rgb(199, 245, 34) 1px 3px; */
   text-shadow: rgb(255, 255, 255) 2px 3px;
