@@ -13,18 +13,18 @@ body {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   color: var(--primary-color);
 }
 h1 {
-  font-size: 50px;
+  font-size: 55px;
 }
 h2 {
   color: var(--secondary-color);
-  font-size: 35px;
+  font-size: 40px;
 }
 p {
-  font-size: 16px;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.7);
 }
 a {
@@ -89,13 +89,15 @@ h3.home {
   margin-top: 35px;
 }
 div.home-paragraph {
-  max-width: 45%;
+  max-width: 50%;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-div .hero-buttons {
-  padding: 12px;
-  margin: 35px;
+div a.hero-buttons {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+  padding: 16px;
   border: 2px solid var(--primary-color);
   border-radius: 4px;
   background: #e0e0e0;
@@ -103,9 +105,10 @@ div .hero-buttons {
   box-shadow: var(--button-shadow);
   text-decoration: none;
 }
-.hero-button-group {
-  padding: 25px;
-  margin-bottom: 10px;
+div.hero-button-group {
+  display: flex;
+  justify-content: center;
+  margin: 45px;
 }
 img.full-snack {
   width: 170px;
@@ -141,13 +144,36 @@ div.aboutParagraph {
 /**** contact.html section ****/
 
 /**** Responsive Design ****/
+/**** Large ****/
+@media (768px < width <=992px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h1.home {
+    margin-top: 15px;
+  }
+  h3.home {
+    margin-top: 25px;
+  }
+  div.home-paragraph {
+    max-width: 75%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  div a.hero-buttons {
+    font-size: 25px;
+  }
+}
 /**** Medium ****/
-@media (768px <= width <=992px) {
+@media (576px < width <=768px) {
   h3 {
     font-size: 20px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   h2 {
     font-size: 25px;
@@ -162,11 +188,54 @@ div.aboutParagraph {
     font-size: 15px;
   }
   div.home-paragraph {
-    max-width: 50%;
+    max-width: 70%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  div a.hero-buttons {
+    font-size: 20px;
+    padding: 12px;
+    margin: 10px;
+  }
+}
+
+/**** Small ****/
+@media (max-width: 576px) {
+  p.brand {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h1.home {
+    margin-top: 15px;
+  }
+  h3.home {
+    margin-top: 25px;
+  }
+  p {
+    font-size: 15px;
+  }
+  div.home-paragraph {
+    max-width: 90%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
-}
-/**** Small ****/
-@media (width <= 768) {
+  div.hero-button-group {
+    display: block;
+    margin: 20px auto;
+  }
+  div a.hero-buttons {
+    max-width: 55%;
+    display: block;
+    padding: 12px;
+    margin: 15px auto;
+    font-size: 18px;
+  }
 }
