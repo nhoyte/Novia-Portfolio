@@ -177,6 +177,7 @@ div.aboutParagraph {
   }
   h2 {
     font-size: 25px;
+    padding: 5px;
   }
   h1.home {
     margin-top: 15px;
@@ -212,6 +213,7 @@ div.aboutParagraph {
   }
   h2 {
     font-size: 20px;
+    padding: 3px;
   }
   h1.home {
     margin-top: 15px;
@@ -223,7 +225,7 @@ div.aboutParagraph {
     font-size: 15px;
   }
   div.home-paragraph {
-    max-width: 90%;
+    max-width: 85%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
