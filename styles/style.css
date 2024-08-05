@@ -24,7 +24,6 @@ h2 {
   font-size: 35px;
 }
 p {
-  font-size: 20px;
   color: rgba(0, 0, 0, 0.7);
 }
 a {
@@ -38,7 +37,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   padding: 20px;
 }
 
@@ -47,13 +46,14 @@ footer {
   width: 100%;
   border-bottom: 1.5px black solid;
   padding: 0;
+  font-size: 24px;
+  line-height: 2;
 }
-.navbar .brand {
+p.brand {
   font-family: "Inknut Antiqua", serif;
-  font-weight: 500;
+  font-weight: 550;
   margin-top: 15px;
   font-size: 25px;
-  color: black;
 }
 
 a.navbarLinks:hover {
@@ -96,6 +96,8 @@ div.home-paragraph {
   max-width: 50%;
   margin-top: 25px;
   margin-bottom: 25px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
 }
 div a.hero-buttons {
   font-size: 25px;
@@ -130,37 +132,33 @@ img.full-snack {
 /**** about.html section ****/
 body.container.about {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   height: 100vh;
   width: 100vw;
 }
 div.containerInnerAbout {
-  /* margin-top: 15px; */
-  text-align: center;
   border: solid 2px black;
   background-color: #ffecba;
 }
 h1.about {
   margin-top: 20px;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 div img.about {
   border-radius: 3%;
-  width: 440px;
-  height: 480px;
+  max-width: 75%;
   box-shadow: 4px 5px 9px 2px #7c652f;
 }
 div.aboutParagraph {
   text-align: justify;
-  margin-right: 40px;
 }
 
 /**** contact.html section ****/
 
 /**** Responsive Design ****/
-/**** Large ****/
+/**** Medium ****/
+
 @media (768px < width <=992px) {
+  /**** Index.html ****/
   h1 {
     font-size: 45px;
   }
@@ -176,14 +174,31 @@ div.aboutParagraph {
   div.home-paragraph {
     max-width: 75%;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   div a.hero-buttons {
     font-size: 25px;
   }
+  /**** About.html ****/
+  h1.about {
+    margin-bottom: 30px;
+  }
+  div img.about {
+    border-radius: 3%;
+    max-width: 50%;
+    box-shadow: 4px 5px 9px 2px #7c652f;
+    margin-bottom: 30px;
+  }
+  div.aboutParagraph {
+    font-size: 22px;
+    margin: 2px;
+    padding: 25px;
+  }
 }
-/**** Medium ****/
+
+/**** Small ****/
 @media (576px < width <=768px) {
+  /**** Index.html ****/
   h3 {
     font-size: 20px;
   }
@@ -200,10 +215,8 @@ div.aboutParagraph {
   h3.home {
     margin-top: 25px;
   }
-  p {
-    font-size: 15px;
-  }
   div.home-paragraph {
+    font-size: 15px;
     max-width: 70%;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -213,10 +226,30 @@ div.aboutParagraph {
     padding: 12px;
     margin: 10px;
   }
+  /**** About.html ****/
+  h1.about {
+    margin-bottom: 15px;
+  }
+  div img.about {
+    border-radius: 3%;
+    max-width: 50%;
+    box-shadow: 4px 5px 9px 2px #7c652f;
+    margin-bottom: 30px;
+  }
+  div.aboutParagraph {
+    font-size: 22px;
+    margin: 2px;
+    padding: 12px;
+  }
+  footer {
+    font-size: 20px;
+    padding: 10px;
+  }
 }
 
-/**** Small ****/
+/**** X-Small ****/
 @media (max-width: 576px) {
+  /**** Index.html ****/
   p.brand {
     font-size: 20px;
   }
@@ -236,13 +269,11 @@ div.aboutParagraph {
   h3.home {
     margin-top: 25px;
   }
-  p {
-    font-size: 15px;
-  }
   div.home-paragraph {
     max-width: 85%;
     margin-top: 15px;
     margin-bottom: 15px;
+    font-size: 15px;
   }
   div.hero-button-group {
     display: block;
@@ -254,5 +285,28 @@ div.aboutParagraph {
     padding: 12px;
     margin: 15px auto;
     font-size: 18px;
+  }
+  /**** About.html ****/
+  h1.about {
+    margin-bottom: 5px;
+  }
+  div img.about {
+    border-radius: 3%;
+    max-width: 70%;
+    box-shadow: 4px 5px 9px 2px #7c652f;
+    margin-bottom: 18px;
+  }
+  div.aboutParagraph {
+    font-size: 16px;
+    margin: 2px;
+    padding: 5px;
+  }
+  div.aboutParagraph p {
+    max-height: 80%;
+    scrollbar-color: var(--primary-color) var(--secondary-color);
+  }
+  footer {
+    font-size: 16px;
+    padding: 8px;
   }
 }
