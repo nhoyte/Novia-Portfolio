@@ -7,7 +7,7 @@
       name="description"
       content="Read more about Novia Hoyte, web developer in USA."
     />
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Itim&display=swap"
@@ -29,14 +29,14 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-   <title>About Me - Novia's Portfolio</title>
+    <title>About Me - Novia's Portfolio</title>
   </head>
   <body class="container contact">
-     <div class="containerInner p-0">
-       <!--Navigation Menu-->
+    <div class="containerInner p-0">
+      <!--Navigation Menu-->
       <nav class="navbar navbar-expand-lg bg-light bg-body-light">
         <div class="container-fluid">
-           <p class="brand">Novia Hoyte</p>
+          <p class="brand">Novia Hoyte</p>
 
           <button
             class="navbar-toggler"
@@ -57,7 +57,8 @@
                   aria-current="page"
                   href="/"
                   title="Homepage"
-                  >Home</a>
+                  >Home</a
+                >
               </li>
               <li class="nav-item p-2">
                 <a
@@ -73,7 +74,10 @@
                 >
               </li>
               <li class="nav-item p-2">
-                <a class="navbarLinks active" href="contact.html" title="View contact information"
+                <a
+                  class="navbarLinks active"
+                  href="contact.html"
+                  title="View contact information"
                   >Contact Me</a
                 >
               </li>
@@ -84,13 +88,54 @@
       <!--End Navigation Menu-->
 
       <h1>Contact Me 📞📧✍🏾</h1>
-      <div class=" container aboutParagraph">
-        <p>
-          Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you. Match means keeps round one her quick. She forming two comfort invited. Yet she income effect edward. Entire desire way design few. Mrs sentiments led solicitude estimating friendship fat. Meant those event is weeks state it to or. Boy but has folly charm there its. Its fact ten spot drew.<br/><br/>
-
-          Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behaviour arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on.
-        </p>
+      <h2 id="heading2"></h2>
+      <div class="formContainer">
+        <form id="contactForm">
+          <div class="row">
+            <p class="col label"><label for="fName">First Name: </label></p>
+            <input class="col input" type="text" id="fname" required />
+          </div>
+          <div class="row">
+            <p class="col label"><label for="lName">Last Name:</label></p>
+            <input class="col input" type="text" id="lname" required />
+          </div>
+          <div class="row">
+            <p class="col label"><label for="email">Email Address: </label></p>
+            <input class="col input" type="email" id="email" required />
+          </div>
+          <div class="row">
+            <p class="col label"><label for="message">Message: </label></p>
+            <textarea
+              class="col input"
+              id="message"
+              rows="5"
+              cols="50"
+              required
+            ></textarea>
+          </div>
+          <div class="row input">
+            <input type="submit" value="Submit" id="submitButton" />
+          </div>
+        </form>
       </div>
-      <footer class="footer mt-auto py-3">Coded by Novia Hoyte</footer>
+
+      <!--Footer Section-->
+      <div class="d-flex bd-highlight mb-1 contactFooter">
+        <div class="me-auto bd-highlight contactText">Coded by Novia Hoyte</div>
+        <div class="p-2 bd-highlight contactSocials">
+          <img src="images\linkedin.ico" alt="LinkedIn" />
+          <a href="https://www.linkedin.com/in/nhoyte/" class="contact">
+            linkedin.com/nhoyte</a
+          >
+        </div>
+        <div class="p-2 bd-highlight contactSocials">
+          <img src="images\github.ico" alt="GitHub" />
+          <a href="https://github.com/nhoyte" class="contact">
+            github.com/nhoyte</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="js\index.js"></script>
   </body>
 </html>
