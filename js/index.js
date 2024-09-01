@@ -5,12 +5,12 @@ function submitForm(event) {
   let email = document.getElementById("email");
   let message = document.getElementById("message");
 
-  let h2 = document.getElementById("contact");
+  let h2 = document.querySelector("#contactHeading");
   h2.innerHTML = `Thank you ${firstName.value} ${lastName.value}, your message has been submitted.`;
 
-  sendEmail(firstName.value, lastName.value, email.value, message.value);
+  sendEmail(firstName.value, lastName.value, message.value);
 }
-function sendEmail(first, last, email, message) {
+function sendEmail(first, last, message) {
   let subject = `${first} ${last}'s inquiry - Novia's Portfolio Page`;
   let emailString = `noviahoyte@gmail.com?subject=${subject}&body=${message}`;
   window.open(`mailto:${emailString}`);

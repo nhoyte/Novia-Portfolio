@@ -205,7 +205,9 @@ h1 {
 h2 {
   margin-bottom: 50px;
 }
-
+h2#contactHeading {
+  color: red;
+}
 p.label {
   font-size: 30px;
   text-align: left;
