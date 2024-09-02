@@ -65,6 +65,10 @@ a.active {
   color: var(--primary-color) !important;
 }
 
+div.containerInner {
+  border: solid 2px black;
+  background-color: #ffecba;
+}
 /**** index.html section ****/
 body.container.home {
   display: flex;
@@ -145,10 +149,13 @@ div.row {
   padding: 20px;
 }
 div img.projects {
-  width: 450px;
-  height: 400px;
+  width: 400px;
+  height: 380px;
   border-radius: 1%;
   box-shadow: 4px 5px 9px 2px #7c652f;
+}
+div img:hover {
+  transform: scale(1.4);
 }
 h3.projects {
   margin-top: 35px;
@@ -177,10 +184,6 @@ body.container.about {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-div.containerInner {
-  border: solid 2px black;
-  background-color: #ffecba;
-}
 div img.about {
   border-radius: 3%;
   max-width: 75%;
@@ -199,31 +202,28 @@ body.contact {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-h1 {
+h1.contact {
   margin-bottom: 15px;
 }
-h2 {
-  margin-bottom: 50px;
-}
-h2#contactHeading {
+h2.contact {
   color: red;
 }
 p.label {
   font-size: 30px;
-  text-align: left;
+  text-align: start;
+  justify-content: flex-start;
 }
 div.input {
   justify-content: flex-end;
 }
 input#submitButton {
-  float: right;
   width: 150px;
   height: 55px;
   margin-bottom: 15px;
 }
-.formContainer {
-  margin: 10px auto;
-  max-width: 50%;
+div.formContainer {
+  margin: 0 auto;
+  max-width: 60%;
 }
 div.contactFooter {
   margin-top: 60px;
@@ -241,9 +241,9 @@ div.contactText {
   padding: 10px 40px 10px 50px;
   justify-content: flex-start;
 }
+
 /**** Responsive Design ****/
 /**** Medium ****/
-
 @media (768px < width <=992px) {
   /**** Index.html ****/
   h1 {
@@ -308,6 +308,24 @@ div.contactText {
     padding-left: 10px;
     text-decoration: underline;
     text-align: justify;
+  }
+  /**** contact.html section ****/
+  h1.contact {
+    margin-bottom: 10px;
+  }
+  div.formContainer {
+    max-width: 90%;
+  }
+  div.contactFooter {
+    margin-top: 0px;
+  }
+  a.contact {
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  div.contactText {
+    font-size: 20px;
+    padding: 10px 10px 0 10px;
   }
 }
 
@@ -391,6 +409,28 @@ div.contactText {
     padding-left: 10px;
     text-decoration: underline;
     text-align: center;
+  }
+  /**** contact.html section ****/
+  h1.contact {
+    margin-bottom: 10px;
+  }
+  div.formContainer {
+    max-width: 90%;
+    padding: 10px;
+  }
+  p.label {
+    font-size: 25px;
+  }
+  div.contactFooter {
+    margin-top: 25px;
+  }
+  a.contact {
+    padding-right: 8px;
+    font-size: 15px;
+  }
+  div.contactText {
+    font-size: 12px;
+    padding: 20px 5px 0 5px;
   }
 }
 
@@ -485,5 +525,24 @@ div.contactText {
     padding-left: 10px;
     text-decoration: underline;
     text-align: center;
+  }
+  /**** contact.html section ****/
+  div.formContainer {
+    max-width: 97%;
+    padding: 25px;
+  }
+  p.label {
+    font-size: 22px;
+  }
+  div.contactFooter {
+    margin-top: 25px;
+  }
+  a.contact {
+    padding-right: 8px;
+    font-size: 15px;
+  }
+  div.contactText {
+    font-size: 12px;
+    padding: 20px 5px 0 5px;
   }
 }
