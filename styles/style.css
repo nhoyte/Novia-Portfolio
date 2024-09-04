@@ -123,11 +123,12 @@ img.full-snack {
   height: 200px;
   margin-bottom: 30px;
 }
-.homepage-button:hover {
+.homepage-button:hover,
+a.projectButton:hover {
   background: #d2d2d2;
   color: rgb(208, 69, 152);
   border: 2px solid rgb(208, 69, 152);
-  transition: all 0.4s ease-out;
+  transition: all 0.2s ease-out;
 }
 /**** projects.html section ****/
 body.projects {
@@ -145,6 +146,18 @@ h2.projects {
   padding-left: 25px;
   text-align: justify;
 }
+a.projectLinks {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 25px;
+  padding: 12px 25px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  background: #e0e0e0;
+  color: var(--primary-color);
+  box-shadow: var(--button-shadow);
+  text-decoration: none;
+}
 div.row {
   padding: 20px;
 }
@@ -161,7 +174,8 @@ h3.projects {
   margin-top: 35px;
   padding-right: 25px;
   padding-left: 25px;
-  text-decoration: underline;
+  font-size: 35px;
+  font-weight: bold;
   text-align: justify;
 }
 p.projectPara {
@@ -302,6 +316,9 @@ div.contactText {
     padding-left: 15px;
     text-align: justify;
   }
+  a.projectLinks {
+    margin-left: 10px;
+  }
   h3.projects {
     margin-top: 35px;
     padding-right: 10px;
@@ -403,12 +420,18 @@ div.contactText {
     padding-left: 15px;
     text-align: center;
   }
+  a.projectLinks {
+    margin-left: 0;
+  }
   h3.projects {
     margin-top: 25px;
     padding-right: 10px;
     padding-left: 10px;
     text-decoration: underline;
     text-align: center;
+  }
+  div.projectButtons {
+    justify-content: center;
   }
   /**** contact.html section ****/
   h1.contact {
@@ -525,6 +548,9 @@ div.contactText {
     padding-left: 10px;
     text-decoration: underline;
     text-align: center;
+  }
+  div.projectButtons {
+    justify-content: center;
   }
   /**** contact.html section ****/
   div.formContainer {
