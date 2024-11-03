@@ -10,6 +10,9 @@ body {
   font-family: "Itim", cursive;
   text-align: center;
   background-image: url("/images/color-splash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 h3 {
@@ -199,8 +202,8 @@ body.container.about {
   margin-bottom: 10px;
 }
 div img.about {
-  border-radius: 3%;
-  max-width: 75%;
+  border-radius: 50%;
+  max-width: 80%;
   box-shadow: 4px 5px 9px 2px #7c652f;
 }
 div.aboutParagraph {
